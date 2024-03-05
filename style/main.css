@@ -303,6 +303,12 @@ blockquote footer {
     font-size: 40px;
     max-width: 220px;
   }
+  .about-column-right {
+    max-width: 100%;
+  }
+  .about-column-left {
+    max-width: 100%;
+  }
   .nav-menu {
     display: none;
     width: auto;
