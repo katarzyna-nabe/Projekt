@@ -7,7 +7,7 @@
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: darkslategrey;
 }
 
 body {
@@ -27,9 +27,9 @@ h3 {
   font-family: "Courier New", Courier, monospace;
 }
 h1 {
-  margin-bottom: 50px;
-  font-size: 40px;
-  font-family: "georgia";
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: "Catamaran", "Arial", sans-serif;
   font-weight: 20;
 }
 h2 {
@@ -37,8 +37,6 @@ h2 {
   margin-bottom: 40px;
 }
 h3 {
-  margin: 0;
-  padding: 0;
   font-size: 30px;
 }
 h2,
@@ -54,7 +52,7 @@ li {
 
 /* stylowanie sekcji */
 .container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 #interest {
@@ -62,7 +60,7 @@ li {
   color: #ffffff;
 }
 section {
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 #quote {
   background: rgb(235, 148, 85);
@@ -71,19 +69,19 @@ section {
 /* stylowanie headera */
 
 header {
-  padding: 100px 200px;
-  background-image: url("../images/DSC04638-Pano.jpg");
+  padding: 60px 20px;
+  background-image: url("../images/DSC02220-2-Enhanced-NR.jpg") ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
-  color: #ffffff;
+  height: 40vh;
+  color: darkslategrey;
 }
 /* stylowanie logo */
 .logo-style {
   color: darkslategrey;
-  font-size: 50px;
-  font-family: "Georgia";
+  font-size: 40px;
+  font-family: "Montserrat";
 }
 /* stylowanie menu mobilnego */
 .burger-menu,
@@ -96,7 +94,7 @@ header {
 }
 
 .close-menu svg {
-  fill: #ffffff;
+  fill: darkslategrey;
   width: 30px;
   height: 30px;
 }
@@ -108,13 +106,15 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .nav-menu {
-  width: 400px;
-  font-size: 20px;
+  max-width: 400px;
+  min-width: auto;
+  font-size: 15px;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .nav-menu a:hover {
   font-weight: 700;
@@ -146,6 +146,11 @@ nav {
 .about-column-right {
   max-width: 45%;
 }
+/* stylowanie zdjęcia  */
+
+.about-column-left img {
+  width: 100%;
+}
 /* stylowanie prawej kolumny */
 .about-column-right h2 {
   color: darkslategray;
@@ -159,7 +164,6 @@ nav {
 #interest ul {
   display: flex;
   gap: 40px;
-  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   color: #ffffff;
@@ -169,6 +173,7 @@ nav {
 }
 #interest h3 {
   margin-bottom: 20px;
+
   /* stylowanie sekcji zainteresowania - ikony */
 }
 #interest svg {
@@ -195,18 +200,63 @@ nav {
   max-width: 500px;
 }
 .photos-gallery {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 20px;
+  justify-content: space-around; */
+  padding: 0 0 4rem 0;
 }
-.photos-gallery figure {
-  max-width: 30%;
-  min-width: 250px;
+.img-container {
+  width: 100%;
+  height: 500px;
+  cursor: pointer;
+  overflow: hidden;
+  &:hover .img-content-hover {
+    display: block;
+  }
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.img-content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: white;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.title {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.img-content {
+  display: none;
+}
+/* .photos-gallery figure {
+  max-width: 22%;
+  min-width: 150px;
 }
 #photos.photos-gallery figcaption {
   font-size: 12px;
   margin-bottom: 20px;
-}
+} */
 .quote-wraper {
   display: flex;
 }
