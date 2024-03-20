@@ -70,7 +70,7 @@ section {
 
 header {
   padding: 60px 20px;
-  background-image: url("../images/DSC02220-2-Enhanced-NR.jpg") ;
+  background-image: url("../images/DSC02220-2-Enhanced-NR.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -200,11 +200,33 @@ nav {
   max-width: 500px;
 }
 .photos-gallery {
+  display: grid;
+  column-gap: 50px;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto1 foto2 foto3"
+    "foto4 foto4 foto5";
   /* display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-around; */
-  padding: 0 0 4rem 0;
+}
+.foto1 {
+  grid-area: foto1;
+}
+.foto2 {
+  grid-area: foto2;
+}
+.foto3 {
+  grid-area: foto3;
+}
+.foto4 {
+  grid-area: foto4;
+}
+.foto5 {
+  grid-area: foto5;
+}
+/* padding: 0 0 4rem 0;
 }
 .img-container {
   width: 100%;
@@ -248,7 +270,7 @@ img {
 }
 .img-content {
   display: none;
-}
+} */
 /* .photos-gallery figure {
   max-width: 22%;
   min-width: 150px;
