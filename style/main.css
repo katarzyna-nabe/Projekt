@@ -46,6 +46,10 @@ h3 {
 p {
   font-size: 15px;
 }
+ul {
+  padding: 0;
+  margin: 0;
+}
 li {
   list-style: none;
 }
@@ -70,7 +74,7 @@ section {
 
 header {
   padding: 60px 20px;
-  background-image: url("../images/DSC02220-2-Enhanced-NR.jpg");
+  background-image: url("../images/baner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -114,7 +118,7 @@ nav {
   font-size: 15px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 15px;
 }
 .nav-menu a:hover {
   font-weight: 700;
@@ -163,13 +167,14 @@ nav {
 /* stylowanie sekcji zainteresowania */
 #interest ul {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-between;
   text-align: center;
   color: #ffffff;
 }
 #interest li {
-  max-width: 300px;
+  max-width: 280px;
 }
 #interest h3 {
   margin-bottom: 20px;
@@ -200,12 +205,13 @@ nav {
   max-width: 500px;
 }
 .photos-gallery {
+  margin-bottom: 100px;
   display: grid;
-  column-gap: 50px;
+  column-gap: 20px;
   grid-template-areas:
-    "foto1 foto2 foto3"
-    "foto1 foto2 foto3"
-    "foto4 foto4 foto5";
+  "foto1 foto1 foto2  foto2 foto3 foto3"
+  "foto1 foto1 foto2  foto2 foto3 foto3"
+  "foto4 foto4 foto4 foto5 foto5 foto5";
   /* display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -226,6 +232,9 @@ nav {
 .foto5 {
   grid-area: foto5;
 }
+
+
+
 /* padding: 0 0 4rem 0;
 }
 .img-container {
@@ -305,7 +314,7 @@ blockquote footer {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  min-width: 280px;
+  min-width: 200px;
   max-width: 500px;
 }
 #contact h2 {
@@ -403,4 +412,19 @@ blockquote footer {
   .hidden {
     display: none;
   }
+}
+#interest li {
+  max-width: 100%;
+}
+
+#interest ul {
+  justify-content: center;
+}
+
+.photos-gallery {
+  display: block;
+}
+
+h2 {
+  font-size: 30px;
 }
