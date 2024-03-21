@@ -209,9 +209,9 @@ nav {
   display: grid;
   column-gap: 20px;
   grid-template-areas:
-  "foto1 foto1 foto2  foto2 foto3 foto3"
-  "foto1 foto1 foto2  foto2 foto3 foto3"
-  "foto4 foto4 foto4 foto5 foto5 foto5";
+    "foto1 foto1 foto2  foto2 foto3 foto3"
+    "foto1 foto1 foto2  foto2 foto3 foto3"
+    "foto4 foto4 foto4 foto5 foto5 foto5";
   /* display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -232,9 +232,6 @@ nav {
 .foto5 {
   grid-area: foto5;
 }
-
-
-
 /* padding: 0 0 4rem 0;
 }
 .img-container {
@@ -380,16 +377,6 @@ blockquote footer {
 }
 /* Dostosowanie stylowania do mobile */
 @media screen and (max-width: 768px) {
-  .h1 {
-    font-size: 40px;
-    max-width: 220px;
-  }
-  .about-column-right {
-    max-width: 100%;
-  }
-  .about-column-left {
-    max-width: 100%;
-  }
   .nav-menu {
     display: none;
     width: auto;
@@ -421,9 +408,9 @@ blockquote footer {
   justify-content: center;
 }
 
-.photos-gallery {
+/* .photos-gallery {
   display: block;
-}
+} */
 
 h2 {
   font-size: 30px;
